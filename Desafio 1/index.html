@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio 1 do Programa Trilhas.</title>
+    <link rel="icon" href="img/inova.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+                    <h1>Clique nos botões para executar os exercícios! (Respostas no console)</h1>
+                    <button onclick="executarExercicio(1)">Exercício 1</button>
+                    <button onclick="executarExercicio(2)">Exercício 2</button>
+                    <button onclick="executarExercicio(3)">Exercício 3</button>
+                    <button onclick="executarExercicio(4)">Exercício 4</button>
+                    <button onclick="executarExercicio(5)">Exercício 5</button><br>
+                    <button onclick="executarExercicio(6)">Exercício 6</button>
+                    <button onclick="executarExercicio(7)">Exercício 7</button>
+                    <button onclick="executarExercicio(8)">Exercício 8</button>
+                    <button onclick="executarExercicio(9)">Exercício 9</button>
+                    <button onclick="executarExercicio(10)">Exercício 10</button><br>
+                    <button onclick="executarExercicio(11)">Exercício 11</button>
+                    <button onclick="executarExercicio(12)">Exercício 12</button>
+                    <button onclick="executarExercicio(13)">Exercício 13</button>
+                    <button onclick="executarExercicio(14)">Exercício 14</button>
+                    <button onclick="executarExercicio(15)">Exercício 15</button>  
+    </div>
+    
+<script>
+    function executarExercicio(numero) {
+        let script = document.createElement("script");
+        script.src = `js/questao${numero}.js`;
+        document.body.appendChild(script);
+    }
+</script>
+
+    
+</body>
+</html>
